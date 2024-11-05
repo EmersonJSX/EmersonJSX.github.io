@@ -1,0 +1,18 @@
+# Default robots.txt for a website
+
+# Allow all user agents to access everything
+User-agent: *
+Disallow:
+
+# Disallow specific user agent (example: Bingbot)
+User-agent: Bingbot
+Disallow: /
+
+# Disallow access to specific folders or files
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cgi-bin/
+
+# Allow specific user agents to access certain paths (if needed)
+User-agent: Googlebot
+Allow: /public/

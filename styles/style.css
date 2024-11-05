@@ -11,11 +11,15 @@
   font: inherit;
 }
 
+.bg {
+  background: linear-gradient(to right, #06061a, #06062a);
+}
+
 body {
   min-height: 100vh;
-  background: linear-gradient(to right, #06061a, #06062a);
   color: #f3f3f3;
   font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #02026e, #ff00f2);
 }
 
 img,

@@ -39,3 +39,16 @@
   font-size: large;
   color: white;
 }
+
+.header__icon-btn {
+  display: none;
+}
+
+@media (width < 768px) {
+  .header__nav {
+    display: none;
+  }
+  .header__icon-btn {
+    display: block;
+  }
+}

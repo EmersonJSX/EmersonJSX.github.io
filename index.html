@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/components/header.css" />
     <link rel="stylesheet" href="styles/components/hero.css" />
+    <link rel="stylesheet" href="styles/components/info.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,7 +36,7 @@
         <span class="header__logo"
           >The<span class="highlight">Frame</span></span
         >
-        <nav>
+        <nav class="header__nav">
           <ul class="nav__ul">
             <li class="nav__li">
               <a
@@ -47,11 +48,23 @@
               >
             </li>
             <li class="nav__li">
-              <a class="nav__a" href="#"
+              <a
+                class="nav__a"
+                href="https://github.com/EmersonJSX"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><i class="fa-brands fa-square-github"></i> Github</a
               >
             </li>
-            <li class="nav__li"><a class="nav__a" href="#">Team</a></li>
+            <li class="nav__li">
+              <a
+                class="nav__a"
+                href="https://github.com/EmersonJSX/EmersonJSX.github.io"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-regular fa-file-code"></i> Code</a
+              >
+            </li>
             <li class="nav__li">
               <a class="nav__a" href="mailto:emersonp.jsx@gmail.com"
                 ><i class="fa-solid fa-square-envelope"></i> Mail</a
@@ -59,6 +72,9 @@
             </li>
           </ul>
         </nav>
+        <button class="header__icon-btn">
+          <i class="fa-regular fa-rectangle-list"></i>
+        </button>
       </header>
       <section class="hero">
         <div class="hero__left">
@@ -74,9 +90,33 @@
           <button class="hero__btn">Discover</button>
         </div>
         <div class="hero__right">
-          <img class="hero__img" src="./assets/images/fada.png" alt="Fada" />
+          <img class="hero__img" src="./assets/images/fada.webp" alt="Fada" />
         </div>
       </section>
     </div>
+    <section class="info">
+      <div class="line"></div>
+      <div class="items-wrapper">
+        <div class="item">
+          <div class="item-title">1M+</div>
+          <div class="item__description">ACTIVE USERS</div>
+        </div>
+        <div class="item">
+          <div class="item-title">$115M</div>
+          <div class="item__description">ALREADY EARNED</div>
+        </div>
+        <div class="item">
+          <div class="item-title">4.9</div>
+          <div class="item__description">AVG RATING</div>
+        </div>
+        <div class="item">
+          <div class="item-title">200+</div>
+          <div class="item__description">COLLECTION</div>
+        </div>
+      </div>
+    </section>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa-regular fa-circle-up"></i>
+    </button>
   </body>
 </html>
