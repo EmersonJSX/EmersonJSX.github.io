@@ -1,0 +1,84 @@
+.hero {
+  display: flex;
+  padding-top: 5rem;
+  overflow: hidden;
+  max-width: 1280px;
+  margin-inline: auto;
+}
+
+.hero__up-text {
+  color: aqua;
+  font-weight: 500;
+  display: inline-block; /* Permite o efeito de digitação */
+  overflow: hidden; /* Oculta o texto que ainda não foi 'digitado' */
+  white-space: nowrap; /* Garante que o texto não quebre */
+  border-right: 2px solid; /* Cursor de digitação */
+  animation: typing 1.5s steps(30, end), blink-caret 0.75s step-end infinite; /* Ajuste a duração e os passos conforme necessário */
+}
+
+@keyframes typing {
+  from {
+    width: 0; /* Começa com a largura 0 */
+  }
+  to {
+    width: 31%; /* Expande até a largura total do texto */
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent; /* Cursor invisível */
+  }
+  50% {
+    border-color: rgba(255, 255, 255, 0.7); /* Cursor visível */
+  }
+}
+
+.hero__title {
+  font-size: 2.25rem;
+  line-height: 1.1;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  margin-bottom: 0.75rem;
+}
+
+section {
+  padding-left: 1.25rem;
+}
+
+.hero__left,
+.hero__right {
+  flex: 1;
+}
+
+.hero__description {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  font-weight: 300;
+  line-height: calc(1em + 0.5rem);
+  margin-block: 1.5rem;
+  max-width: 55ch;
+}
+
+.hero__btn {
+  font-size: 1rem;
+  background: linear-gradient(to right, #e8546b, #ac3cf6);
+  padding: 0.5em 2em;
+  border-radius: 6px;
+  color: black;
+  border: none; /* Remover borda padrão */
+  cursor: pointer; /* Muda o cursor ao passar o mouse */
+  transition: transform 0.39s ease, background 0.39s ease; /* Transição suave para transformação e fundo */
+}
+
+.hero__btn:hover {
+  font-size: 1.1rem;
+  transform: scale(1.05); /* Aumenta levemente o botão */
+}
+
+/* right */
+.hero__img {
+  transform: rotate(15deg);
+  max-width: 550px;
+}

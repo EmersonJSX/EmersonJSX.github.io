@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 1.25rem;
+  padding-block: 1.25rem;
+  align-items: center;
+}
+
+.header__logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.highlight {
+  border: 2px solid #a200ff; /* Altere a cor da borda aqui */
+  padding: 2px; /* Ajuste o padding se necessário */
+}
+
+.highlight2 {
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff6ec7, #f3a183);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Ensure the text color is transparent to show the gradient */
+}
+
+.nav__ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav__a {
+  color: inherit;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.nav__a:hover {
+  font-size: large;
+  color: white;
+}
